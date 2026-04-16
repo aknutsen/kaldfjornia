@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaldfjornia Climbing Works</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo-container">
+        <img src="./assets/logo.png" alt="Kaldfjornia Logo" class="nav-logo">
+      </div>
+      <nav class="nav-links">
+        <a href="#about">Vår greie</a>
+        <a href="#products">Stæsj</a>
+        <a href="#contact">Preik med oss</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Blø hardt.<br>På lokalt treverk.</h1>
+      <p class="hero-subtitle">Proffe hangboards og klypeblokker sløyd i kalde, forblåste Kaldfjord.<br>Laget med verktøy som ligner mer på det bestefar brukte enn en fancy CNC-maskin.</p>
+      <a href="#products" class="btn btn-primary">Bli ursterk her</a>
+    </div>
+  </section>
+
+  <!-- About / Environment Section -->
+  <section id="about" class="about-section">
+    <div class="container about-grid">
+      <div class="about-text">
+        <h2>Rett fra kulda i <span class="highlight">Kaldfjorden</span></h2>
+        <p>Her på Kaldfjornia mener vi at trening skal svi skikkelig i underarmene, men det skal pokker ikke gå ut over naturen vi elsker å klatre i. Derfor snekkererer vi sylskarpe treningsverktøy av lokalt nordnorsk tre, og redder materialer som egentlig skulle ende opp som peisved.</p>
+        <p>Glem masseprodusert CNC-stæsj. Vi snekrer på gamlemåten. Maks gjenbruk, håndverk bestefar ville nikket anerkjennende til, og treverk huden din faktisk tåler. Værsågod!</p>
+      </div>
+      <div class="about-features">
+        <div class="feature-card">
+          <div class="feature-icon">🌲</div>
+          <h3>Tre fra nabotomta</h3>
+          <p>Kortreist. Mindre CO2-pes, og en god dose hjemmesnekra, nordnorsk magi.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">♻️</div>
+          <h3>Vi elsker andres søppel</h3>
+          <p>Vi tar treverk folk holder på å kaste og trylle det om til torturmaskiner for fingrene dine.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products-section">
+    <div class="container">
+      <div class="section-headers">
+        <h2>Våre <span class="highlight">Tortur-instrumenter</span></h2>
+        <p>Designa av klatrere, for klatrere. Testet (og grått over) i fjorden vår.</p>
+      </div>
+      <div id="products-grid" class="products-grid">
+        <!-- Products injected by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer id="contact" class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="./assets/logo.png" alt="Kaldfjornia Logo" class="footer-logo">
+        <p>Kaldfjornia Climbing Works<br>Kaldfjord, Tromsø, Norge</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:hallo@kaldfjornia.no">hallo@kaldfjornia.no</a>
+        <div class="socials">
+          <a href="#">Instagram (hvor vi later som vi er sterke)</a><br>
+          <a href="#">Facebook (for bestemor)</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Kaldfjornia Climbing Works. Bygget med plank, pils og svette.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
