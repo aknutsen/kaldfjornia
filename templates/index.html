@@ -1,0 +1,65 @@
+{{define "content"}}
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Blø hardt.<br>På lokalt treverk.</h1>
+      <p class="hero-subtitle">Proffe hangboards og klypeblokker sløyd i kalde, forblåste Kaldfjord.<br>Laget med
+        verktøy som ligner mer på det bestefar brukte enn en fancy CNC-maskin.</p>
+      <a href="#products" class="btn btn-primary">Bli ursterk her</a>
+    </div>
+  </section>
+
+  <!-- About / Environment Section -->
+  <section id="about" class="about-section">
+    <div class="container about-grid">
+      <div class="about-text">
+        <h2>Rett fra kulda i <span class="highlight">Kaldfjorden</span></h2>
+        <p>Her på Kaldfjornia mener vi at trening skal svi skikkelig i underarmene, men det skal pokker ikke gå ut over
+          naturen vi elsker å klatre i. Derfor snekkererer vi sylskarpe treningsverktøy av lokalt nordnorsk tre, og
+          redder materialer som egentlig skulle ende opp som peisved.</p>
+        <p>Glem masseprodusert CNC-stæsj. Vi snekrer på gamlemåten. Maks gjenbruk, håndverk bestefar ville nikket
+          anerkjennende til, og treverk huden din faktisk tåler. Værsågod!</p>
+      </div>
+      <div class="about-features">
+        <div class="feature-card">
+          <div class="feature-icon">🌲</div>
+          <h3>Tre fra nabotomta</h3>
+          <p>Kortreist. Mindre CO2-pes, og en god dose hjemmesnekra, nordnorsk magi.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">♻️</div>
+          <h3>Vi elsker andres søppel</h3>
+          <p>Vi tar treverk folk holder på å kaste og transformerer det om til torturmaskiner for fingrene dine.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products-section">
+    <div class="container">
+      <div class="section-headers">
+        <h2>Våre <span class="highlight">Tortur-instrumenter</span></h2>
+        <p>Designa av klatrere, for klatrere. Testet (og grått over) i fjorden vår.</p>
+      </div>
+      <div id="products-grid" class="products-grid">
+        {{range .Products}}
+        <div class="product-card">
+          <div class="product-img-wrapper">
+            <img src="{{.Image}}" alt="{{.Name}}" class="product-img">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">{{.Name}}</h3>
+            <p class="product-desc">{{.Description}}</p>
+            <div class="product-footer">
+              <span class="product-price">{{.Price}}</span>
+              <a href="/p/{{.ID}}" class="btn btn-primary" style="padding: 0.5rem 1.2rem; font-size: 0.9rem;">Se mer</a>
+            </div>
+          </div>
+        </div>
+        {{end}}
+      </div>
+    </div>
+  </section>
+{{end}}

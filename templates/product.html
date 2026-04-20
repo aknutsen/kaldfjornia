@@ -1,0 +1,33 @@
+{{define "content"}}
+<section class="product-detail-section">
+  <div class="container">
+    <div class="product-detail-grid">
+      <div class="detail-img-wrapper">
+        <img src="{{.Product.Image}}" alt="{{.Product.Name}}" class="detail-img">
+      </div>
+      <div>
+        <h1 class="detail-title">{{.Product.Name}}</h1>
+        <p class="detail-price">{{.Product.Price}}</p>
+
+        <div class="detail-block">
+          <h3 class="detail-section-title">Om produktet</h3>
+          <p class="detail-description">{{.Product.LongDescription}}</p>
+        </div>
+
+        <div class="detail-block">
+          <h3 class="detail-section-title">Spesifikasjoner</h3>
+          <ul class="specs-list">
+            {{range .Product.Specs}}
+            <li>{{.}}</li>
+            {{end}}
+          </ul>
+        </div>
+
+        <a href="#" class="btn btn-primary btn-cta">Legg i handlekurv</a>
+
+        <a href="/#products" class="back-link">← Tilbake til alle produkter</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}

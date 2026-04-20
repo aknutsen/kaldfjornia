@@ -1,0 +1,41 @@
+[
+  {
+    "id": "blamann",
+    "name": "Blåmann",
+    "description": "Oppkalt etter soppen som infiserte furua. Laget av resirkulert villmarkspanel — tre som egentlig skulle bli peisved.",
+    "long_description": "Blåmann er laget av resirkulert villmarkspanel — den karakteristiske furua med blå-grå marmorering fra blåvedsoppen som ga brettet navn. Treet hadde ingen fremtid som kledning, men vi så potensialet. Resultatet er et hangboard med sjel, særpreg og nok dybder til at du kan hate oss på ordentlig.",
+    "price": "1 200 NOK",
+    "image": "/assets/hangboard.png",
+    "specs": [
+      "20mm og 10mm kanter",
+      "Massivt lokalt treverk",
+      "Håndpussa finish"
+    ]
+  },
+  {
+    "id": "portable-hangboard",
+    "name": "Det Slibrige Lommebrettet",
+    "description": "Kast det i sekken. Varm opp under ruta istedet for å rope at du dro ei sene på første flytt.",
+    "long_description": "Ikke la navnet lure deg; dette brettet er dønn seriøst. Designet for å være lett nok til å henge på sekken, men stabilt nok til at du kan dra på skikkelig. Perfekt for oppvarming på craget eller trening på reise.",
+    "price": "600 NOK",
+    "image": "/assets/portable.png",
+    "specs": [
+      "20mm og 15mm kanter",
+      "Vekt: ca 400g",
+      "Inkluderer 6mm repsnor"
+    ]
+  },
+  {
+    "id": "oak-pinch-block",
+    "name": "Pinch-Blokka fra Helvete",
+    "description": "Klypetrening er dritt, men denne massive treklossen med øyebolt gjør at du snart kan knuse valnøtter med to fingre.",
+    "long_description": "Hvis du vil slutte å skli av de vertikale granitt-vondtene i Ersfjorden, er dette verktøyet for deg. Varier grepsbredden ved å snu blokka. Kan brukes med frivekter eller henges opp i en pull-up bar.",
+    "price": "450 NOK",
+    "image": "/assets/pinch_block.png",
+    "specs": [
+      "Variabel klypebredde",
+      "Massiv eik",
+      "Rustfri øyebolt medfølger"
+    ]
+  }
+]
