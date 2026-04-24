@@ -2,8 +2,27 @@
 <section class="product-detail-section">
   <div class="container">
     <div class="product-detail-grid">
-      <div class="detail-img-wrapper">
-        <img src="{{.Product.Image}}" alt="{{.Product.Name}}" class="detail-img">
+      <div class="carousel-container">
+        <div class="carousel-main">
+          <button class="carousel-btn carousel-btn-prev" aria-label="Previous image">‹</button>
+          <div class="carousel-track-wrapper">
+            <div class="carousel-track">
+              {{range .Product.Images}}
+              <div class="carousel-slide">
+                <img src="{{.}}" alt="{{$.Product.Name}}" class="carousel-img">
+              </div>
+              {{end}}
+            </div>
+          </div>
+          <button class="carousel-btn carousel-btn-next" aria-label="Next image">›</button>
+        </div>
+        <div class="carousel-thumbnails">
+          {{range $index, $image := .Product.Images}}
+          <button class="thumbnail {{if eq $index 0}}active{{end}}" data-index="{{$index}}" aria-label="View image {{$index}}">
+            <img src="{{$image}}" alt="Thumbnail {{$index}}">
+          </button>
+          {{end}}
+        </div>
       </div>
       <div>
         <h1 class="detail-title">{{.Product.Name}}</h1>

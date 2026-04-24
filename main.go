@@ -19,7 +19,7 @@ type Product struct {
 	Description     string   `json:"description"`
 	LongDescription string   `json:"long_description"`
 	Price           string   `json:"price"`
-	Image           string   `json:"image"`
+	Images          []string `json:"images"`
 	Specs           []string `json:"specs"`
 }
 
@@ -42,6 +42,9 @@ func renderTemplate(w http.ResponseWriter, r *http.Request, name string, data in
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
+	tmpl.Funcs(template.FuncMap{
+		"add": func(a, b int) int { return a + b },
+	})
 	err = tmpl.ExecuteTemplate(w, "layout", data)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)

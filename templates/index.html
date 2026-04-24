@@ -47,7 +47,7 @@
         {{range .Products}}
         <div class="product-card">
           <div class="product-img-wrapper">
-            <img src="{{.Image}}" alt="{{.Name}}" class="product-img">
+            <img src="{{index .Images 0}}" alt="{{.Name}}" class="product-img">
           </div>
           <div class="product-info">
             <h3 class="product-title">{{.Name}}</h3>
